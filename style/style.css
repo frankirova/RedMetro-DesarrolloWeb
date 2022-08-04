@@ -29,38 +29,6 @@ header {
 }
 
 /* nav */
-
-/* nav {
-    display: grid;
-    grid-template-rows: auto auto ;
-    justify-content: space-between;
-    align-items: baseline; 
-    
-} */
-
-.enlace-menu {
-    color: white;
-    text-decoration: none;
-    height: 20px;
-    font-size: 18px;
-    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    transition: clip-path .5s;
-}
-.enlace-menu::after {
-
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin-top: 3px;
-    background: rgb(207, 207, 207);
-    clip-path: var(--clippy);
-    transition: clip-path .5s;
-}
-.enlace-menu:hover {
-    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    color: white;
-}
 .nav-item-edit:after{
     content: "";
     display: block;
@@ -81,15 +49,6 @@ header {
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
     transition: clip-path .5s;
 }
-/* .nav-menu {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    column-gap: 2em;
-    margin-left: 10px;
-    list-style: none; 
-    
-    
-}*/
 .enlace-menu-nav {
     color: white;
     text-decoration: none;
@@ -99,7 +58,6 @@ header {
 a:hover {
     color: white;
 }
-
 /* logo */
 
 .enlace-logo {
@@ -147,6 +105,7 @@ main {
     width: 75%;
     border-top:solid #006C67;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .titulo-internet, .titulo-voz-ip, .titulo-datos, .titulo-datacenter {
@@ -154,6 +113,7 @@ main {
     padding: 40px;
     width: 75%;
     border-bottom: 1px solid gray;
+    text-align: center;
 }
 
 /* info */
@@ -213,7 +173,6 @@ footer {
 
 .contacto-inferior {
     align-items: center;
-    /* margin-left: 25%; */
     margin-top: 80px;
     text-align: center;
     color:  rgb(207, 207, 207);
@@ -223,16 +182,12 @@ footer {
 }
 
 .logos-partners {
-    /* position: absolute;
-    top:25px ;
-    right: 10px;  */
     width: 33.33%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: flex-end;
     margin-top: 10px;
-    
 }
 
 /* boton contactanos */
@@ -246,19 +201,17 @@ footer {
     top: 50px;
     margin-bottom: 60px;
     background-color: #006C67;
-    
-    
-    
 }
-
 .boton-contacto:hover {
     background-color:#0997907e ;
     color: white;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 
+
 /* boton ver mas */
+
+
 .ver-mas {
     width: 120px;
     padding: 25px;
@@ -273,19 +226,20 @@ footer {
     align-items: center;
     background-color: #006C67;
     margin: 20px;
-    
-    
 }
+
 
 /* lista index */
  
+
 .lista-index {
     list-style: none;
-    /* margin-bottom: 100px; */
     line-height: 2em;
 }
 
+
 /* pag-servicios */
+
 
 .internet {
     display: flex;
@@ -293,50 +247,55 @@ footer {
     /* align-items: center; */
     justify-content: center;
 }
-    
-
-.lista-servicios, .lista-voz-ip {
+.lista-servicios {
+    margin: 10px;
+    text-align: center;
+    line-height: 2em;
+    font-size: 20px;
+    list-style: none;
+}
+.lista-voz-ip {
     margin: 10px;
     text-align: center;
     line-height: 2em;
     font-size: 20px
 }
+
+
  /* CARDS */
-.servicios-recidenciales {
+
+
+.servicios-residenciales {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 .card-servicio {
     width: 33.33%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    
 }
-
-
 .card-servicio:hover {
     background-color: rgb(182, 180, 180);
     color: #006C67;
     border-radius: 15px;
     box-shadow:(10px 10px 10px rgba(0, 0, 0, 0.75));
-    
 }
 .card-servicio p {
     font-size: 20px;
 }
 
+
 /* Cards-empresas */
+
 
 .servicios-empresas {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 .card-servicio-empresas {
     width: 33.35%;
     text-align: center;
@@ -346,11 +305,9 @@ footer {
     justify-content: space-between ;
     align-items: center;
 }
-
 .card-servicio-empresas p {
     font-size: 20px;
 }
-
 .card-servicio-empresas:hover {
     background-color: rgb(182, 180, 180);
     color: #006C67;
@@ -369,35 +326,35 @@ footer {
     margin-left: 100px;
     margin-right: 100px;
 }
-
 .parrafo-quienes-somos {
     text-align: center;
     margin-bottom: 50px;
     margin-left: 150px;
     margin-right: 150px;
-
 }
 .main-quienes-somos {
     display: flex;
     flex-direction: column;
-
 }
 
+
 /* pag contactos */
+
 
 .main-contacto h1 {
     font-size: 60px;
     text-align: center;
 }
-
 .main-contacto h3 {
     font-size: 30px;
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-/* 
-formulario */
+
+
+/* formulario */
+
 
 .titulo-contacto{
     text-align: center;
@@ -408,7 +365,6 @@ formulario */
     font-size: 27px;
     padding: 10px;
 }
-
 .btn {
     color: white;
     background-color: #006C67;
@@ -430,7 +386,9 @@ fieldset {
     align-items: center;
 }
 
+
 /* pag-empresas */
+
 
 .titulo-empresas{
     text-align: center;
@@ -441,11 +399,9 @@ fieldset {
     height: 50px;
     background-color: #006C67;
     color: rgb(207, 207, 207);
-    margin-left: 25%;
-    
-    
+    margin-left: 25%;    
+    text-transform: uppercase;
 }
-
 .titulo-card-empresas {
     font-size: 35px;
     margin-bottom: 50px;
@@ -454,6 +410,10 @@ fieldset {
     border-top: solid #006C67 ;
     text-align: center;
 }
+
+
+/*MEDIAS QUERIES*/
+
 
 @media (max-width: 320px){
     main {width: 320px}
@@ -496,15 +456,10 @@ fieldset {
 }
 
 @media (max-width: 768px){
-    nav{
-        grid-area: nav;
-        display: flex;
-        flex-direction: column;
-    }
-
+  
     .img{
         grid-area:img;
-        height: 620px; 
+        height: 520px; 
     }  
 
     .informacion {
@@ -530,15 +485,15 @@ fieldset {
         display: none;
     }
 
-    .servicios-recidenciales {
+    .servicios-residenciales {
+        flex-direction: column;
+    
+      }
+      .servicios-empresas {
         flex-direction: column;
     
       }
     
-      .card-servicio {
-        width: 100%;
-      }
-
       .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
         width: 100%;
         margin: 0;
