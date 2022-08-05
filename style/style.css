@@ -24,7 +24,7 @@ body {
 
 header {
     background-color:#006C67;
-    height: 75px;
+    height: 4em;
     box-shadow:(10px 10px 10px rgba(0, 0, 0, 0.25));   
 }
 
@@ -328,9 +328,9 @@ footer {
 }
 .parrafo-quienes-somos {
     text-align: center;
-    margin-bottom: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-bottom: 3em;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 .main-quienes-somos {
     display: flex;
