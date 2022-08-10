@@ -1,533 +1,468 @@
-@import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Gantari&display=swap");
 @font-face {
-    font-family:'Gantari', sans-serif;
-    src: url();
+  font-family: "Gantari", sans-serif;
+  src: url();
 }
-
+/*VARIABLES*/
 * {
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Gantari', sans-serif;
-    width: 100%;
-    display: grid;
-    grid-template-rows:auto auto auto auto;
-    grid-template-areas: "nav""img""info""footer";
+  font-family: "Gantari", sans-serif;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav" "img" "info" "footer";
 }
-a {
-    color: white;
-}
-/* header */
 
+a {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+/* header */
 header {
-    background-color:#006C67;
-    height: 4em;
-    box-shadow:(10px 10px 10px rgba(0, 0, 0, 0.25));   
+  background-color: #006C67;
+  height: 4em;
 }
 
 /* nav */
 .dropdown-item:hover {
-    background-color: rgb(207, 207, 207);
-    color: #006C67;
+  background-color: rgb(207, 207, 207);
+  color: #006C67;
 }
+
 .dropdown-menu {
-    background-color: rgb(207, 207, 207);
+  background-color: rgb(207, 207, 207);
 }
-.nav-item-edit:after{
-    content: "";
-    display: block;
-    width: 80%;
-    height: 3px;
-    margin-top: 3px;
-    background: rgb(207, 207, 207);
-    clip-path: var(--clippy);
-    transition: clip-path .5s;
+
+.nav-item-edit {
+  color: white;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
 }
 .nav-item-edit:hover {
-    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    color: white;
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  color: white;
 }
-.nav-item-edit {
-    color: white;
-    text-decoration: none;
-    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    transition: clip-path .5s;
+.nav-item-edit:after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  margin-top: 3px;
+  background: rgb(207, 207, 207);
+  -webkit-clip-path: var(--clippy);
+          clip-path: var(--clippy);
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
 }
+
 .enlace-menu-nav {
-    color: white;
-    text-decoration: none;
-    height: 20px;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  height: 20px;
+  font-size: 18px;
 }
-a:hover {
-    color: white;
-}
-/* logo */
 
-.enlace-logo {
-    color: white;
-    text-decoration: none;
-}
-.logo {
-    font-size: 25px;
-    font-weight: bold;
-    padding: 30px;
-    border-radius: 20px;
-    height: 99px;
-}
-.logo:hover {
-    background-color: #0997907e;
-}
 /* main */
-
 main {
-    background-color: rgb(207, 207, 207);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-     /* align-items: center;  */
+  background-color: rgb(207, 207, 207);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
- 
+
 /* imagen index */
-
 .img {
-    grid-area: img;
-    width:auto ;
-    height: 800px ;
-    transition: all .5s ease-in-out;
-} 
+  grid-area: img;
+  width: auto;
+  height: 800px;
+  transition: all 0.5s ease-in-out;
+}
+
 .img-home {
-    width: 100%;
-    height: 100%;  
+  width: 100%;
+  height: 100%;
 }
 
- /* titulos-index */
-
- .titulo-card-servicio {
-    font-size: 40px;
-    padding: 40px;
-    width: 75%;
-    border-top:solid #006C67;
-    text-align: center;
-    text-transform: uppercase;
-}
-
+/* titulos-index */
 .titulo-internet, .titulo-voz-ip, .titulo-datos, .titulo-datacenter {
-    font-size: 40px;
-    padding: 40px;
-    width: 75%;
-    border-bottom: 1px solid gray;
-    text-align: center;
+  font-size: 40px;
+  padding: 40px;
+  width: 75%;
+  border-bottom: 1px solid gray;
+  text-align: center;
 }
 
 /* info */
-
-.informacion { 
-    display: flex;
-    flex-direction: row;
-    grid-area: info;  
+.informacion {
+  display: flex;
+  flex-direction: row;
+  grid-area: info;
 }
 
 /* info-hover-index */
-
-.card-index:hover{
-    background-color: rgb(182, 180, 180);
-    color: #006C67;
-    border-radius: 15px;
-    box-shadow:(10px 10px 10px rgba(0, 0, 0, 0.75));
+/* cards-index */
+.card-index {
+  width: 25%;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-index:hover {
+  background-color: rgb(182, 180, 180);
+  color: #006C67;
+  border-radius: 15px;
 }
 
- /* cards-index */
-
-.card-index {
-    width: 25%;
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between ;
-    align-items: center;
-    
-} 
-
-
 /* footer */
-
 footer {
-    grid-area: footer;
-    background-color: #006C67;
-    height: 10em;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
+  grid-area: footer;
+  background-color: #006C67;
+  height: 10em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
 .lista-nav-footer {
-    width: 33.33%;
-    margin-top: 1em;
+  width: 33.33%;
+  margin-top: 1em;
 }
 
 .item-nav-footer {
-    list-style: none;
-    color: rgba(255, 255, 255, 0.713);
-    padding: 5px;
-    text-decoration: none;
-    line-height: 1.2em;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.713);
+  padding: 5px;
+  text-decoration: none;
+  line-height: 1.2em;
 }
+
 .enlace-menu-footer {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.713) ;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.713);
 }
 
 .contacto-inferior {
-    align-items: center;
-    /* margin-top: 5.3em; */
-    text-align: center;
-    /* color:  rgb(207, 207, 207); */
-    width: 33.33%;
-    letter-spacing: 1em;
-
+  align-items: center;
+  /* margin-top: 5.3em; */
+  text-align: center;
+  /* color:  rgb(207, 207, 207); */
+  width: 33.33%;
+  letter-spacing: 1em;
 }
+
 .icon-footer {
-    font-size: 1.8em;
-    color: rgba(255, 255, 255, 0.713);
+  font-size: 1.8em;
+  color: rgba(255, 255, 255, 0.713);
 }
 .icon-footer:hover {
-    color: white;
+  color: white;
 }
 
 .logos-partners {
-    width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: flex-end;
-    margin-top: 10px;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-end;
+  margin-top: 10px;
 }
 
 /* boton contactanos */
-
 .boton-contacto {
-    padding: 10px;
-    font-size: 18px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    top: 50px;
-    margin-bottom: 60px;
-    background-color: #006C67;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  top: 50px;
+  margin-bottom: 60px;
+  background-color: #006C67;
 }
 .boton-contacto:hover {
-    background-color:#0997907e ;
-    color: white;
-    border-radius: 10px; 
+  background-color: rgba(9, 151, 144, 0.4941176471);
+  color: white;
+  border-radius: 10px;
 }
-
 
 /* boton ver mas */
-
-
 .ver-mas {
-    width: 120px;
-    padding: 25px;
-    height: 10px;
-    font-size: 18px;
-    text-align: center ;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border-radius: 30px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    background-color: #006C67;
-    margin: 20px;
+  width: 120px;
+  padding: 25px;
+  height: 10px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: #006C67;
+  margin: 20px;
 }
-
 
 /* lista index */
- 
-
 .lista-index {
-    list-style: none;
-    line-height: 2em;
+  list-style: none;
+  line-height: 2em;
 }
-
 
 /* pag-servicios */
-
-
 .internet {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
 }
+
 .lista-servicios {
-    margin: 10px;
-    text-align: center;
-    line-height: 2em;
-    font-size: 20px;
-    list-style: none;
+  margin: 10px;
+  text-align: center;
+  line-height: 2em;
+  font-size: 20px;
+  list-style: none;
 }
+
 .lista-voz-ip {
-    margin: 10px;
-    text-align: center;
-    line-height: 2em;
-    font-size: 20px
+  margin: 10px;
+  text-align: center;
+  line-height: 2em;
+  font-size: 20px;
 }
 
-
- /* CARDS */
-
-
+/* CARDS-SERVICIOS */
 .servicios-residenciales {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
 .card-servicio {
-    width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.card-servicio:hover {
-    background-color: rgb(182, 180, 180);
-    color: #006C67;
-    border-radius: 15px;
-    box-shadow:(10px 10px 10px rgba(0, 0, 0, 0.75));
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .card-servicio p {
-    font-size: 20px;
+  font-size: 20px;
+}
+.card-servicio:hover {
+  background-color: rgb(182, 180, 180);
+  color: #006C67;
+  border-radius: 15px;
 }
 
+.titulo-card-servicio {
+  font-size: 40px;
+  padding: 40px;
+  width: 75%;
+  border-top: solid #006C67;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* Cards-empresas */
-
-
 .servicios-empresas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
 .card-servicio-empresas {
-    width: 33.35%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between ;
-    align-items: center;
+  width: 33.35%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .card-servicio-empresas p {
-    font-size: 20px;
+  font-size: 20px;
 }
 .card-servicio-empresas:hover {
-    background-color: rgb(182, 180, 180);
-    color: #006C67;
-    border-radius: 15px;
-    box-shadow:(10px 10px 10px rgba(0, 0, 0, 0.75));
+  background-color: rgb(182, 180, 180);
+  color: #006C67;
+  border-radius: 15px;
 }
-
 
 /* pag quienes somos */
-
-
 .titulo-quienes-somos {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.parrafo-quienes-somos {
-    text-align: center;
-    margin-bottom: 3em;
-    margin-left: 10em;
-    margin-right: 10em;
-}
-.main-quienes-somos {
-    display: flex;
-    flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
+.parrafo-quienes-somos {
+  text-align: center;
+  margin-bottom: 3em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.main-quienes-somos {
+  display: flex;
+  flex-direction: column;
+}
 
 /* pag contactos */
-
-
 .main-contacto h1 {
-    font-size: 60px;
-    text-align: center;
+  font-size: 60px;
+  text-align: center;
 }
 .main-contacto h3 {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-
 
 /* formulario */
-
-
-.titulo-contacto{
-    text-align: center;
-    padding: 20px;
+.titulo-contacto {
+  text-align: center;
+  padding: 20px;
 }
+
 .header {
-    color: #006C67;
-    font-size: 27px;
-    padding: 10px;
+  color: #006C67;
+  font-size: 27px;
+  padding: 10px;
 }
+
 .btn {
-    color: white;
-    background-color: #006C67;
-    border: none;
-    margin-right:33%;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  color: white;
+  background-color: #006C67;
+  border: none;
+  margin-right: 33%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .btn:hover {
-    color: white;
-    background-color: #0997908c;
+  color: white;
+  background-color: rgba(9, 151, 144, 0.5490196078);
 }
-.form-group{
-    margin-left:25%;
-}
-/* fieldset {
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-} */
 
+.form-group {
+  margin-left: 25%;
+}
 
 /* pag-empresas */
-
-
-.titulo-empresas{
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 40px;
-    width: 50%;
-    height: 50px;
-    background-color: #006C67;
-    color: rgb(207, 207, 207);
-    margin-left: 25%;    
-    text-transform: uppercase;
+.titulo-empresas {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 40px;
+  width: 50%;
+  height: 50px;
+  background-color: #006C67;
+  color: rgb(207, 207, 207);
+  margin-left: 25%;
+  text-transform: uppercase;
 }
+
 .titulo-card-empresas {
-    font-size: 35px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 75%;
-    border-top: solid #006C67 ;
-    text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 75%;
+  border-top: solid #006C67;
+  text-align: center;
 }
-
 
 /*MEDIAS QUERIES*/
-
-
-@media (max-width: 320px){
-    main {width: 320px}
+@media (max-width: 320px) {
+  main {
+    width: 320px;
+  }
   .img-home {
     height: 460px;
   }
   .informacion {
     margin-right: 45%;
-    
     align-content: center;
   }
-
   .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
     width: 100%;
-    
-    }
-    .servicios-dedicados, .voz-ip, .datos, .datacenter {
-        flex-direction: column;
-    }
-
+  }
+  .servicios-dedicados, .voz-ip, .datos, .datacenter {
+    flex-direction: column;
+  }
   footer {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-
   .contacto-inferior {
-    
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
-    
   }
-
   .servicios-recidenciales {
     flex-direction: column;
   }
-  .form-group{
-    margin-left:0;
+  .form-group {
+    margin-left: 0;
+  }
 }
-
-}
-
-@media (max-width: 768px){
-  
-    .img{
-        grid-area:img;
-        height: 520px; 
-    }  
-
-    .informacion {
-        grid-area:info;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .titulo-internet, .titulo-voz-ip, .titulo-voz-ip, .titulo-datos, .titulo-datacenter {
+@media (max-width: 768px) {
+  .img {
+    grid-area: img;
+    height: 520px;
+  }
+  .informacion {
+    grid-area: info;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo-internet, .titulo-voz-ip, .titulo-voz-ip, .titulo-datos, .titulo-datacenter {
     padding: 0;
     font-size: 30px;
-    }
-
-    footer {
-        grid-area: footer;
-        display: flex;
-        justify-content: center;
-    }
-
-    .lista-nav-footer, .logos-partners  {
-        display: none;
-    }
-
-    .servicios-residenciales {
-        flex-direction: column;
-    
-      }
-      .servicios-empresas {
-        flex-direction: column;
-    
-      }
-    
-      .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
-        width: 100%;
-        margin: 0;
-        
-        }
-        .servicios-dedicados, .voz-ip, .datos, .datacenter {
-            flex-direction: column;
-        }
-        .form-group{
-            margin-left:0;
-        }
-}
+  }
+  footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+  }
+  .lista-nav-footer, .logos-partners {
+    display: none;
+  }
+  .servicios-residenciales {
+    flex-direction: column;
+  }
+  .servicios-empresas {
+    flex-direction: column;
+  }
+  .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
+    width: 100%;
+    margin: 0;
+  }
+  .servicios-dedicados, .voz-ip, .datos, .datacenter {
+    flex-direction: column;
+  }
+  .form-group {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
