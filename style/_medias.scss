@@ -1,42 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
-
-
-@font-face {
-    font-family:'Gantari', sans-serif;
-    src: url();
-}
 /* variables */
 @import "var-map";
-
-/* header */
-@import "header";
-
-/* main */
-@import "main";
-
-/* footer */
-@import "footer";
-* {
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Gantari', sans-serif;
-    width: 100%;
-    display: grid;
-    grid-template-rows:auto auto auto auto;
-    grid-template-areas: "nav""img""info""footer";
-}
-a {
-    color: white;
-
-    &:hover {
-        color: white;
-    }
-}
-
 
 
 /*MEDIAS QUERIES*/
