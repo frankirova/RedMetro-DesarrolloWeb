@@ -8,14 +8,6 @@
 /* variables */
 @import "var-map";
 
-/* header */
-@import "header";
-
-/* main */
-@import "main";
-
-/* footer */
-@import "footer";
 * {
     margin:0px;
     padding: 0px;
@@ -37,102 +29,15 @@ a {
     }
 }
 
+/* header */
+@import "header";
 
+/* main */
+@import "main";
+
+/* footer */
+@import "footer";
 
 /*MEDIAS QUERIES*/
+@import "medias";
 
-
-@media (max-width: 320px){
-    main {width: 320px}
-  .img-home {
-    height: 460px;
-  }
-  .informacion {
-    margin-right: 45%;
-    
-    align-content: center;
-  }
-
-  .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
-    width: 100%;
-    
-    }
-    .servicios-dedicados, .voz-ip, .datos, .datacenter {
-        flex-direction: column;
-    }
-
-  footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .contacto-inferior {
-    
-    width: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    
-  }
-
-  .servicios-recidenciales {
-    flex-direction: column;
-  }
-  .form-group{
-    margin-left:0;
-}
-
-}
-
-@media (max-width: 768px){
-  
-    .img{
-        grid-area:img;
-        height: 520px; 
-    }  
-
-    .informacion {
-        grid-area:info;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .titulo-internet, .titulo-voz-ip, .titulo-voz-ip, .titulo-datos, .titulo-datacenter {
-    padding: 0;
-    font-size: 30px;
-    }
-
-    footer {
-        grid-area: footer;
-        display: flex;
-        justify-content: center;
-    }
-
-    .lista-nav-footer, .logos-partners  {
-        display: none;
-    }
-
-    .servicios-residenciales {
-        flex-direction: column;
-    
-      }
-      .servicios-empresas {
-        flex-direction: column;
-    
-      }
-    
-      .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
-        width: 100%;
-        margin: 0;
-        
-        }
-        .servicios-dedicados, .voz-ip, .datos, .datacenter {
-            flex-direction: column;
-        }
-        .form-group{
-            margin-left:0;
-        }
-}

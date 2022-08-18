@@ -2,3 +2,18 @@
 /*VARIABLES*/
 $green: #006C67;
 $gray: rgb(207, 207, 207);
+
+
+$titulo-colores: (
+    internet:red,
+    voz-ip:green,
+    datos:blue,
+    datacenter:brown
+);
+@each $titulo,$color in $titulo-colores {
+    .titulo-#{$titulo}{
+    color: $color
+}
+
+
+}

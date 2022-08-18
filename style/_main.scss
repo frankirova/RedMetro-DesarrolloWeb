@@ -1,5 +1,12 @@
 /* variables */
 @import "var-map";
+@mixin hover {
+    
+    background-color: rgb(182, 180, 180);
+    color: $green;
+    border-radius: 15px;
+      
+}
 
 /* main */
 
@@ -26,7 +33,6 @@ main {
 }
 
  /* titulos-index */
-
 
 
 .titulo-internet, .titulo-voz-ip, .titulo-datos, .titulo-datacenter {
@@ -62,9 +68,7 @@ main {
     
 
     &:hover{
-        background-color: rgb(182, 180, 180);
-        color: $green;
-        border-radius: 15px;
+        @include hover;
     }
 } 
 
@@ -90,6 +94,16 @@ main {
     }
 }
 
+/* lista index */
+ 
+
+.lista-index {
+    list-style: none;
+    line-height: 2em;
+}
+
+
+
 
 /* boton ver mas */
 
@@ -108,14 +122,6 @@ main {
     align-items: center;
     background-color: $green;
     margin: 20px;
-}
-
-/* lista index */
- 
-
-.lista-index {
-    list-style: none;
-    line-height: 2em;
 }
 
 
@@ -163,9 +169,7 @@ main {
     }
 
     &:hover {
-        background-color: rgb(182, 180, 180);
-        color: $green;
-        border-radius: 15px;
+        @include hover;
     }
 }
 .titulo-card-servicio {
@@ -182,28 +186,13 @@ main {
 
 
 .servicios-empresas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @extend .servicios-residenciales
 }
 .card-servicio-empresas {
-    width: 33.35%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between ;
-    align-items: center;
-
-    p {
-        font-size: 20px;
-    }
-    &:hover {
-        background-color: rgb(182, 180, 180);
-        color: $green;
-        border-radius: 15px;
-    }
+    @extend .card-servicio;
+    
 }
+
 
 /* pag quienes somos */
 
@@ -297,5 +286,4 @@ main {
     border-top: solid $green ;
     text-align: center;
 }
-
 

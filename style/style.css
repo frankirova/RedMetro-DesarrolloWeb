@@ -5,9 +5,62 @@
 }
 /* variables */
 /*VARIABLES*/
+.titulo-internet {
+  color: red;
+}
+
+.titulo-voz-ip {
+  color: green;
+}
+
+.titulo-datos {
+  color: blue;
+}
+
+.titulo-datacenter {
+  color: brown;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gantari", sans-serif;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav" "img" "info" "footer";
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
 /* header */
 /* variables */
 /*VARIABLES*/
+.titulo-internet {
+  color: red;
+}
+
+.titulo-voz-ip {
+  color: green;
+}
+
+.titulo-datos {
+  color: blue;
+}
+
+.titulo-datacenter {
+  color: brown;
+}
+
 /* header */
 header {
   background-color: #006C67;
@@ -60,6 +113,22 @@ header {
 /* main */
 /* variables */
 /*VARIABLES*/
+.titulo-internet {
+  color: red;
+}
+
+.titulo-voz-ip {
+  color: green;
+}
+
+.titulo-datos {
+  color: blue;
+}
+
+.titulo-datacenter {
+  color: brown;
+}
+
 /* main */
 main {
   background-color: rgb(207, 207, 207);
@@ -131,6 +200,12 @@ main {
   border-radius: 10px;
 }
 
+/* lista index */
+.lista-index {
+  list-style: none;
+  line-height: 2em;
+}
+
 /* boton ver mas */
 .ver-mas {
   width: 120px;
@@ -146,12 +221,6 @@ main {
   align-items: center;
   background-color: #006C67;
   margin: 20px;
-}
-
-/* lista index */
-.lista-index {
-  list-style: none;
-  line-height: 2em;
 }
 
 /* pag-servicios */
@@ -178,23 +247,23 @@ main {
 }
 
 /* CARDS-SERVICIOS */
-.servicios-residenciales {
+.servicios-residenciales, .servicios-empresas {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.card-servicio {
+.card-servicio, .card-servicio-empresas {
   width: 33.33%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
-.card-servicio p {
+.card-servicio p, .card-servicio-empresas p {
   font-size: 20px;
 }
-.card-servicio:hover {
+.card-servicio:hover, .card-servicio-empresas:hover {
   background-color: rgb(182, 180, 180);
   color: #006C67;
   border-radius: 15px;
@@ -210,30 +279,6 @@ main {
 }
 
 /* Cards-empresas */
-.servicios-empresas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.card-servicio-empresas {
-  width: 33.35%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.card-servicio-empresas p {
-  font-size: 20px;
-}
-.card-servicio-empresas:hover {
-  background-color: rgb(182, 180, 180);
-  color: #006C67;
-  border-radius: 15px;
-}
-
 /* pag quienes somos */
 .titulo-quienes-somos {
   text-align: center;
@@ -321,6 +366,22 @@ main {
 
 /* footer */
 /*VARIABLES*/
+.titulo-internet {
+  color: red;
+}
+
+.titulo-voz-ip {
+  color: green;
+}
+
+.titulo-datos {
+  color: blue;
+}
+
+.titulo-datacenter {
+  color: brown;
+}
+
 /* footer */
 footer {
   grid-area: footer;
@@ -371,25 +432,23 @@ footer .logos-partners {
   margin-top: 10px;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+/*MEDIAS QUERIES*/
+/* variables */
+/*VARIABLES*/
+.titulo-internet {
+  color: red;
 }
 
-body {
-  font-family: "Gantari", sans-serif;
-  width: 100%;
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "nav" "img" "info" "footer";
+.titulo-voz-ip {
+  color: green;
 }
 
-a {
-  color: white;
+.titulo-datos {
+  color: blue;
 }
-a:hover {
-  color: white;
+
+.titulo-datacenter {
+  color: brown;
 }
 
 /*MEDIAS QUERIES*/
@@ -452,7 +511,7 @@ a:hover {
   .lista-nav-footer, .logos-partners {
     display: none;
   }
-  .servicios-residenciales {
+  .servicios-residenciales, .servicios-empresas {
     flex-direction: column;
   }
   .servicios-empresas {
