@@ -280,6 +280,13 @@ main {
 
 /* Cards-empresas */
 /* pag quienes somos */
+.mapa {
+  width: 40%;
+  margin-top: 10em;
+  margin-right: 2em;
+  grid-area: mapa;
+}
+
 .titulo-quienes-somos {
   text-align: center;
   margin-bottom: 50px;
@@ -291,13 +298,28 @@ main {
 .parrafo-quienes-somos {
   text-align: center;
   margin-bottom: 3em;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
-.main-quienes-somos {
+.quienes-somos {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "texto mapa" "texto mapa" "texto card-quienes-somos";
+}
+
+.texto {
+  grid-area: texto;
+}
+
+.card-quienes-somos {
+  grid-area: card-quienes-somos;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
 }
 
 /* pag contactos */
@@ -480,11 +502,23 @@ footer .logos-partners {
     align-content: center;
     justify-content: center;
   }
+  .logos-partners {
+    display: none;
+  }
   .servicios-recidenciales {
     flex-direction: column;
   }
   .form-group {
     margin-left: 0;
+  }
+  .quienes-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-quienes-somos {
+    display: none;
   }
 }
 @media (max-width: 768px) {
