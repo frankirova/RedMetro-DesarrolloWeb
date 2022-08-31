@@ -5,9 +5,10 @@
 /*MEDIAS QUERIES*/
 
 
-@media (min-width: 320px){
+@media (max-width: 420px){
   
   .img{height: 100%}
+
   .informacion {
     margin-right: 45%;
     align-content: center;
@@ -190,7 +191,8 @@
           margin-left: 5%;
           margin-right: 5%;
         }
-        .card-quienes-somos{
-          justify-content: flex-start;
+        .card-quienes-somos, .mapa{
+          display: none;
         }
+       
 }

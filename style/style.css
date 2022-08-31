@@ -257,6 +257,7 @@ main {
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
+  border-bottom: 3px solid #006C67;
 }
 
 .parrafo-quienes-somos {
@@ -410,7 +411,7 @@ footer .logos-partners {
 /* variables */
 /*VARIABLES*/
 /*MEDIAS QUERIES*/
-@media (min-width: 320px) {
+@media (max-width: 420px) {
   .img {
     height: 100%;
   }
@@ -563,7 +564,7 @@ footer .logos-partners {
     margin-left: 5%;
     margin-right: 5%;
   }
-  .card-quienes-somos {
-    justify-content: flex-start;
+  .card-quienes-somos, .mapa {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
