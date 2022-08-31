@@ -5,22 +5,6 @@
 }
 /* variables */
 /*VARIABLES*/
-.titulo-internet {
-  color: red;
-}
-
-.titulo-voz-ip {
-  color: green;
-}
-
-.titulo-datos {
-  color: blue;
-}
-
-.titulo-datacenter {
-  color: brown;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -45,22 +29,6 @@ a:hover {
 /* header */
 /* variables */
 /*VARIABLES*/
-.titulo-internet {
-  color: red;
-}
-
-.titulo-voz-ip {
-  color: green;
-}
-
-.titulo-datos {
-  color: blue;
-}
-
-.titulo-datacenter {
-  color: brown;
-}
-
 /* header */
 header {
   background-color: #006C67;
@@ -113,22 +81,6 @@ header {
 /* main */
 /* variables */
 /*VARIABLES*/
-.titulo-internet {
-  color: red;
-}
-
-.titulo-voz-ip {
-  color: green;
-}
-
-.titulo-datos {
-  color: blue;
-}
-
-.titulo-datacenter {
-  color: brown;
-}
-
 /* main */
 main {
   background-color: rgb(207, 207, 207);
@@ -388,22 +340,6 @@ main {
 
 /* footer */
 /*VARIABLES*/
-.titulo-internet {
-  color: red;
-}
-
-.titulo-voz-ip {
-  color: green;
-}
-
-.titulo-datos {
-  color: blue;
-}
-
-.titulo-datacenter {
-  color: brown;
-}
-
 /* footer */
 footer {
   grid-area: footer;
@@ -457,22 +393,6 @@ footer .logos-partners {
 /*MEDIAS QUERIES*/
 /* variables */
 /*VARIABLES*/
-.titulo-internet {
-  color: red;
-}
-
-.titulo-voz-ip {
-  color: green;
-}
-
-.titulo-datos {
-  color: blue;
-}
-
-.titulo-datacenter {
-  color: brown;
-}
-
 /*MEDIAS QUERIES*/
 @media (max-width: 320px) {
   main {
@@ -485,6 +405,42 @@ footer .logos-partners {
     margin-right: 45%;
     align-content: center;
   }
+  .titulo-empresas {
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    height: auto;
+    width: 75%;
+    text-align: center;
+  }
+  .internet ul {
+    margin-right: 10%;
+  }
+  .item-lista-internet {
+    font-size: 1em;
+  }
+  b {
+    font-size: 1.2em;
+  }
+  .titulo-card {
+    padding: 0%;
+    margin-bottom: 10%;
+    font-size: 1.7em;
+  }
+  .card-servicio-empresas ul {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+  }
+  .card-servicio-empresas p {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-style: italic;
+  }
   .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
     width: 100%;
   }
@@ -494,6 +450,7 @@ footer .logos-partners {
   footer {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .contacto-inferior {
@@ -502,7 +459,7 @@ footer .logos-partners {
     align-content: center;
     justify-content: center;
   }
-  .logos-partners {
+  img {
     display: none;
   }
   .servicios-recidenciales {
@@ -516,6 +473,14 @@ footer .logos-partners {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .quienes-somos p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .quienes-somos .titulo-quienes-somos {
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .card-quienes-somos {
     display: none;

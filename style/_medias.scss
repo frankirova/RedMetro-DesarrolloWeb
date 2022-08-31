@@ -6,15 +6,62 @@
 
 
 @media (max-width: 320px){
-    main {width: 320px}
+    main{
+      width: 320px
+
+    }
   .img-home {
     height: 460px;
   }
   .informacion {
     margin-right: 45%;
-    
     align-content: center;
+
   }
+
+  .titulo-empresas {
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    height: auto;
+    width: 75%;
+    text-align: center;
+  
+  }
+.internet {
+  ul {
+    margin-right: 10%;
+  }
+
+}
+
+  .item-lista-internet {  
+    font-size: 1em;
+}
+b {font-size: 1.2em;}
+
+  .titulo-card {
+    padding: 0%;
+    margin-bottom: 10%;
+    font-size: 1.7em;
+  }
+  .card-servicio-empresas {
+    ul {
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 1em;
+    }
+    p {
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+
 
   .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
     width: 100%;
@@ -27,6 +74,7 @@
   footer {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -38,7 +86,7 @@
     justify-content: center;
     
   }
-  .logos-partners{
+  img{
     display: none;
   }
   
@@ -53,10 +101,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  p{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .titulo-quienes-somos {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 .card-quienes-somos{
   display: none;
 }
+
 }
 
 @media (max-width: 768px){
