@@ -99,7 +99,7 @@ main {
 
 .img-home {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 /* titulos-index */
@@ -206,11 +206,11 @@ main {
 }
 
 .card-servicio, .card-servicio-empresas {
+  display: grid;
   width: 33.33%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
+  align-content: space-between;
+  justify-items: center;
+  justify-content: space-evenly;
 }
 .card-servicio p, .card-servicio-empresas p {
   font-size: 20px;
@@ -231,9 +231,21 @@ main {
 }
 
 /* Cards-empresas */
+.card-servicio-empresas p {
+  margin-top: 5%;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.3em;
+  text-align: center;
+}
+.card-servicio-empresas .titulo-card {
+  font-size: 2em;
+  border-top: solid #006C67;
+}
+
 /* pag quienes somos */
 .mapa {
-  width: 40%;
   margin-top: 10em;
   margin-right: 2em;
   grid-area: mapa;
@@ -252,13 +264,14 @@ main {
   margin-bottom: 3em;
   margin-left: 5em;
   margin-right: 5em;
+  font-size: 1.2em;
 }
 
 .quienes-somos {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-template-areas: "texto mapa" "texto mapa" "texto card-quienes-somos";
+  grid-template-areas: "texto mapa" "texto card-quienes-somos" "texto card-quienes-somos";
 }
 
 .texto {
@@ -366,6 +379,9 @@ footer .enlace-menu-footer {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.713);
 }
+footer .enlace-menu-footer:hover {
+  color: white;
+}
 footer .contacto-inferior {
   align-items: center;
   /* margin-top: 5.3em; */
@@ -394,12 +410,9 @@ footer .logos-partners {
 /* variables */
 /*VARIABLES*/
 /*MEDIAS QUERIES*/
-@media (max-width: 320px) {
-  main {
-    width: 320px;
-  }
-  .img-home {
-    height: 460px;
+@media (min-width: 320px) {
+  .img {
+    height: 100%;
   }
   .informacion {
     margin-right: 45%;
@@ -453,20 +466,24 @@ footer .logos-partners {
     flex-direction: column;
     justify-content: center;
   }
-  .contacto-inferior {
+  footer .lista-nav-footer, footer .logos-partners {
+    display: none;
+  }
+  footer .contacto-inferior {
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
-  }
-  img {
-    display: none;
   }
   .servicios-recidenciales {
     flex-direction: column;
   }
   .form-group {
     margin-left: 0;
+  }
+  .contenedor-btn {
+    display: flex;
+    justify-content: flex-end;
   }
   .quienes-somos {
     display: flex;
@@ -482,14 +499,14 @@ footer .logos-partners {
     margin-left: 10%;
     margin-right: 10%;
   }
-  .card-quienes-somos {
+  .card-quienes-somos, .mapa {
     display: none;
   }
 }
 @media (max-width: 768px) {
   .img {
     grid-area: img;
-    height: 520px;
+    height: 100%;
   }
   .informacion {
     grid-area: info;
@@ -507,7 +524,7 @@ footer .logos-partners {
     display: flex;
     justify-content: center;
   }
-  .lista-nav-footer, .logos-partners {
+  footer .lista-nav-footer, footer .logos-partners {
     display: none;
   }
   .servicios-residenciales, .servicios-empresas {
@@ -515,6 +532,17 @@ footer .logos-partners {
   }
   .servicios-empresas {
     flex-direction: column;
+  }
+  .card-servicio-empresas ul {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.4em;
+  }
+  .card-servicio-empresas p {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-style: italic;
   }
   .card-index, .card-servicio, .card-servicio-empresas, .card-voz-ip, .card-datos, .card-datacenter {
     width: 100%;
@@ -524,6 +552,18 @@ footer .logos-partners {
     flex-direction: column;
   }
   .form-group {
-    margin-left: 0;
+    margin-left: 25%;
+  }
+  .contenedor-btn {
+    display: flex;
+    justify-content: center;
+  }
+  /*====quienes somos====*/
+  .quienes-somos p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .card-quienes-somos {
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */

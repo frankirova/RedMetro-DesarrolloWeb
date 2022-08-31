@@ -29,8 +29,9 @@ main {
 } 
 .img-home {
     width: 100%;
-    height: 100%;  
+    height: 90%;  
 }
+
 
  /* titulos-index */
 
@@ -158,20 +159,20 @@ main {
     justify-content: space-evenly;
 }
 .card-servicio {
+    display: grid;
     width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-
+    align-content: space-between;
+    justify-items: center;
+    justify-content: space-evenly;
     p {
         font-size: 20px;
+        
     }
-
     &:hover {
         @include hover;
     }
 }
+
 .titulo-card-servicio {
     font-size: 40px;
     padding: 40px;
@@ -190,6 +191,19 @@ main {
 }
 .card-servicio-empresas {
     @extend .card-servicio;
+    p {
+        margin-top: 5%;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .titulo-card {
+        font-size: 2em;
+        border-top: solid $green;
+    }
+    
     
 }
 
@@ -197,7 +211,6 @@ main {
 /* pag quienes somos */
 
 .mapa {
-    width: 40%;
     margin-top: 10em;
     margin-right: 2em;
     grid-area: mapa;
@@ -214,13 +227,14 @@ main {
     margin-bottom: 3em;
     margin-left: 5em;
     margin-right: 5em;
+    font-size: 1.2em;
 }
 .quienes-somos {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "texto mapa"
-                         "texto mapa"
+                         "texto card-quienes-somos"
                          "texto card-quienes-somos";
 }
 
