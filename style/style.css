@@ -6,8 +6,8 @@
 /* variables */
 /*VARIABLES*/
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -75,7 +75,7 @@ header {
   color: white;
   text-decoration: none;
   height: 20px;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 /* main */
@@ -104,8 +104,6 @@ main {
 
 /* titulos-index */
 .titulo-internet, .titulo-voz-ip, .titulo-datos, .titulo-datacenter {
-  font-size: 40px;
-  padding: 40px;
   width: 75%;
   border-bottom: 1px solid gray;
   text-align: center;
@@ -118,11 +116,9 @@ main {
   grid-area: info;
 }
 
-/* info-hover-index */
 /* cards-index */
 .card-index {
   width: 25%;
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -138,7 +134,7 @@ main {
 /* boton contactanos */
 .boton-contacto {
   padding: 10px;
-  font-size: 18px;
+  font-size: 1.3em;
   text-decoration: none;
   color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -163,7 +159,7 @@ main {
   width: 120px;
   padding: 25px;
   height: 10px;
-  font-size: 18px;
+  font-size: 1.2em;
   text-align: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -179,7 +175,6 @@ main {
 .internet {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -213,21 +208,12 @@ main {
   justify-content: space-evenly;
 }
 .card-servicio p, .card-servicio-empresas p {
-  font-size: 20px;
+  font-size: 2em;
 }
 .card-servicio:hover, .card-servicio-empresas:hover {
   background-color: rgb(182, 180, 180);
   color: #006C67;
   border-radius: 15px;
-}
-
-.titulo-card-servicio {
-  font-size: 40px;
-  padding: 40px;
-  width: 75%;
-  border-top: solid #006C67;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 /* Cards-empresas */
@@ -290,11 +276,11 @@ main {
 
 /* pag contactos */
 .main-contacto h1 {
-  font-size: 60px;
+  font-size: 4em;
   text-align: center;
 }
 .main-contacto h3 {
-  font-size: 30px;
+  font-size: 2em;
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -308,7 +294,7 @@ main {
 
 .header {
   color: #006C67;
-  font-size: 27px;
+  font-size: 2em;
   padding: 10px;
 }
 
@@ -334,7 +320,7 @@ main {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 2.5em;
   width: 50%;
   height: 50px;
   background-color: #006C67;
@@ -344,7 +330,7 @@ main {
 }
 
 .titulo-card-empresas {
-  font-size: 35px;
+  font-size: 2em;
   margin-bottom: 50px;
   margin-top: 50px;
   width: 75%;
@@ -385,9 +371,7 @@ footer .enlace-menu-footer:hover {
 }
 footer .contacto-inferior {
   align-items: center;
-  /* margin-top: 5.3em; */
   text-align: center;
-  /* color:  rgb(207, 207, 207); */
   width: 33.33%;
   letter-spacing: 1em;
 }
@@ -518,7 +502,7 @@ footer .logos-partners {
   }
   .titulo-internet, .titulo-voz-ip, .titulo-voz-ip, .titulo-datos, .titulo-datacenter {
     padding: 0;
-    font-size: 30px;
+    font-size: 2em;
   }
   footer {
     grid-area: footer;
