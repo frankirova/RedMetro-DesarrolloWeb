@@ -93,13 +93,13 @@ main {
 .img {
   grid-area: img;
   width: auto;
-  height: 800px;
+  height: 40em;
   transition: all 0.5s ease-in-out;
 }
 
 .img-home {
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 /* titulos-index */
@@ -118,6 +118,7 @@ main {
 
 /* cards-index */
 .card-index {
+  padding: 4em;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -303,7 +304,7 @@ main {
   background-color: #006C67;
   border: none;
   margin-right: 33%;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
   margin-top: 2rem;
 }
 .btn:hover {
@@ -344,7 +345,7 @@ main {
 footer {
   grid-area: footer;
   background-color: #006C67;
-  height: 10em;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -508,6 +509,7 @@ footer .logos-partners {
     grid-area: footer;
     display: flex;
     justify-content: center;
+    padding: 5em;
   }
   footer .lista-nav-footer, footer .logos-partners {
     display: none;
