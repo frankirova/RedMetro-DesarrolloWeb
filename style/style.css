@@ -540,10 +540,12 @@ footer .logos-partners {
   }
   .form-group {
     margin-left: 25%;
+    margin-right: 25%;
   }
   .contenedor-btn {
     display: flex;
     justify-content: center;
+    margin-left: 3em;
   }
   /*====quienes somos====*/
   .quienes-somos p {
